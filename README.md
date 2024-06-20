@@ -8,16 +8,24 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+When you run the `npm start` command in a Node.js project, it typically does the following:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Starts the Development Server:** Launches a local server to serve the application during development.
+2. **Opens the Application in a Browser:** Automatically opens the application in the default web browser.
+3. **Enables Live Reloading:** Watches for changes in the source files and automatically reloads the application when changes are detected.
+
+In the context of a Create React App project, `npm start` runs the app in development mode at [http://localhost:3000](http://localhost:3000).
+
+For more details, you can refer to the [official Create React App documentation](https://create-react-app.dev/docs/getting-started).
 
 ### `npm test`
+When you run the `npm test` command in a Node.js project, it typically performs the following:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Runs Test Suites:** Executes the test scripts defined in your project. For a Create React App project, it uses Jest as the test runner.
+2. **Displays Results:** Shows the results of the test cases, indicating which tests passed and which failed.
+3. **Watches for Changes:** In watch mode, it reruns tests automatically when changes are made to the source files or test files.
+
+In the context of Create React App, `npm test` runs the app’s test suite in interactive watch mode.
 
 ### `npm run build`
 
