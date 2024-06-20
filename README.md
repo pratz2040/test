@@ -28,56 +28,25 @@ When you run the `npm test` command in a Node.js project, it typically performs 
 In the context of Create React App, `npm test` runs the app’s test suite in interactive watch mode.
 
 ### `npm run build`
+Running `npm run build` in a Create React App project generates a production-ready build of your application. Here's what it does:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Transpiles JavaScript:** Converts modern JavaScript into a version compatible with older browsers.
+2. **Minifies Code:** Reduces the size of JavaScript, CSS, and HTML files to improve load times.
+3. **Optimizes Assets:** Compresses images and other static assets.
+4. **Bundles Files:** Combines JavaScript modules into a single file to reduce HTTP requests.
+5. **Generates Source Maps:** Helps in debugging minified code.
+6. **Creates Build Directory:** Places all optimized files in a `build` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can then deploy the contents of the `build` folder to a web server.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Running `npm run eject` in a Create React App project permanently exposes the configuration files and dependencies used by Create React App. This includes Webpack, Babel, ESLint configurations, and more. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Here's what happens when you eject:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Copies Configuration Files:** Moves configuration files into your project, giving you full control.
+2. **Modifies package.json:** Updates the `scripts` section and dependencies in `package.json`.
+3. **Irreversible:** Once ejected, you can't revert back to the standard Create React App setup.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# react_1.0
-# test
-# test
-# test
-# test
+Ejecting is useful for advanced customizations but is irreversible. Use it only if you need deep customization that isn't possible with the default setup.
